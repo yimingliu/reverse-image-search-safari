@@ -9,6 +9,9 @@
 #import "SafariExtensionHandler.h"
 #import "SafariExtensionViewController.h"
 
+NSString *const GOOGLE_BASE_URI = @"https://www.google.com/searchbyimage?image_url=%@";
+NSString *const BING_BASE_URI = @"https://www.bing.com/images/search?q=imgurl:%@&view=detailv2&selectedIndex=0&pageurl=&mode=ImageViewer&iss=sbi";
+
 @interface SafariExtensionHandler ()
 
 @end
@@ -17,9 +20,9 @@
 
 - (void)messageReceivedWithName:(NSString *)messageName fromPage:(SFSafariPage *)page userInfo:(NSDictionary *)userInfo {
     // This method will be called when a content script provided by your extension calls safari.extension.dispatchMessage("message").
-    [page getPagePropertiesWithCompletionHandler:^(SFSafariPageProperties *properties) {
-        NSLog(@"The extension received a message (%@) from a script injected into (%@) with userInfo (%@)", messageName, properties.url, userInfo);
-    }];
+//    [page getPagePropertiesWithCompletionHandler:^(SFSafariPageProperties *properties) {
+//        NSLog(@"The extension received a message (%@) from a script injected into (%@) with userInfo (%@)", messageName, properties.url, userInfo);
+//    }];
 }
 
 //- (void)toolbarItemClickedInWindow:(SFSafariWindow *)window {
@@ -36,11 +39,10 @@
 {
     
     NSString *target_uri = [userInfo valueForKey:@"uri"];
-    NSLog(@"Got to here with %@", userInfo);
     //NSLog(@"Got to here with 2 %@ %@ %@", entity_id, id_type, site);
-    if ([command isEqualToString:@"search-google"])
+    if ([command isEqualToString:@"search-google"] || [command isEqualToString:@"search-bing"])
     {
-        NSLog(@"URI %@", target_uri);
+        //NSLog(@"URI %@", target_uri);
         if (target_uri)
             validationHandler(NO, nil);
         else
@@ -56,17 +58,25 @@
                                     inPage:(SFSafariPage *)page userInfo:(NSDictionary<NSString *, id> *)userInfo
 {
     NSString *image_uri = [userInfo valueForKey:@"uri"];
+    NSString *search_uri = NULL;
+    
+    image_uri = [image_uri stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
     if ([command isEqualToString:@"search-google"] && image_uri)
     {
- 
-        NSString *google_base_uri = @"https://www.google.com/searchbyimage?image_url=";
-        image_uri = [image_uri stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
-        NSURL *google_uri = [NSURL URLWithString:[google_base_uri stringByAppendingString:image_uri]];
+        search_uri = [NSString stringWithFormat:GOOGLE_BASE_URI, image_uri];
+    }
+    else if ([command isEqualToString:@"search-bing"] && image_uri)
+    {
+        search_uri = [NSString stringWithFormat:BING_BASE_URI, image_uri];
+    }
+    //NSLog(@"Search URI:  %@", search_uri);
+    if (search_uri)
+    {
         [SFSafariApplication getActiveWindowWithCompletionHandler:^(SFSafariWindow * _Nullable activeWindow) {
-            [activeWindow openTabWithURL:google_uri makeActiveIfPossible:YES completionHandler:^(SFSafariTab * _Nullable tab)
-            {
-                NSLog(@"Page opened");
-            }];
+            [activeWindow openTabWithURL:[NSURL URLWithString:search_uri] makeActiveIfPossible:YES completionHandler:^(SFSafariTab * _Nullable tab)
+             {
+                 //NSLog(@"Page opened");
+             }];
         }];
     }
 

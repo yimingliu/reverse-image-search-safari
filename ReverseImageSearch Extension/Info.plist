@@ -43,6 +43,12 @@
                 <key>Command</key>
                 <string>search-google</string>
             </dict>
+            <dict>
+                <key>Text</key>
+                <string>Bing This Image</string>
+                <key>Command</key>
+                <string>search-bing</string>
+            </dict>
         </array>
 		<key>SFSafariWebsiteAccess</key>
 		<dict>

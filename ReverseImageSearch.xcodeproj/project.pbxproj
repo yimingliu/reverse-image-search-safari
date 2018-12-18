@@ -68,6 +68,7 @@
 		5385E50921C96ADE0004AC7C /* reverseimage-injected.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "reverseimage-injected.js"; sourceTree = "<group>"; };
 		5385E50B21C96ADE0004AC7C /* ToolbarItemIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ToolbarItemIcon.pdf; sourceTree = "<group>"; };
 		5385E50D21C96ADE0004AC7C /* ReverseImageSearch_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ReverseImageSearch_Extension.entitlements; sourceTree = "<group>"; };
+		5385E51721C9B4C80004AC7C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +93,7 @@
 		5385E4D721C96ADC0004AC7C = {
 			isa = PBXGroup;
 			children = (
+				5385E51721C9B4C80004AC7C /* README.md */,
 				5385E4E221C96ADC0004AC7C /* ReverseImageSearch */,
 				5385E4FE21C96ADE0004AC7C /* ReverseImageSearch Extension */,
 				5385E4FB21C96ADE0004AC7C /* Frameworks */,
