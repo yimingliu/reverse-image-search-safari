@@ -59,8 +59,8 @@ NSString *const BING_BASE_URI = @"https://www.bing.com/images/search?q=imgurl:%@
 {
     NSString *image_uri = [userInfo valueForKey:@"uri"];
     NSString *search_uri = NULL;
-    
-    image_uri = [image_uri stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
+    // it turns out using URLQueryAllowedCharacterSet doesn't actually percent-encode for some reason.  Go figure.
+    image_uri = [image_uri stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet alphanumericCharacterSet]];
     if ([command isEqualToString:@"search-google"] && image_uri)
     {
         search_uri = [NSString stringWithFormat:GOOGLE_BASE_URI, image_uri];
@@ -69,7 +69,8 @@ NSString *const BING_BASE_URI = @"https://www.bing.com/images/search?q=imgurl:%@
     {
         search_uri = [NSString stringWithFormat:BING_BASE_URI, image_uri];
     }
-    //NSLog(@"Search URI:  %@", search_uri);
+//    NSLog(@"Image URI:  %@", image_uri);
+//    NSLog(@"Search URI:  %@", search_uri);
     if (search_uri)
     {
         [SFSafariApplication getActiveWindowWithCompletionHandler:^(SFSafariWindow * _Nullable activeWindow) {
