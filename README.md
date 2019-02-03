@@ -26,6 +26,8 @@ Right-click on most images on a web page, and pick either "Google This Image" or
 
 Tested on macOS 10.14 Mojave and Safari 12.0.1.  It may or may not work with other combinations of {macOS, Safari} versions.
 
+The build target is now set for macOS 10.13.  Unfortunately, I do not have a macOS 10.13 machine to test with, so if it turns out to not work on 10.13, I cannot offer support.  I will take patches or pull requests, however.
+
 ## Future work
 
 * Add other image search engines like TinEye.
