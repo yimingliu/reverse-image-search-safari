@@ -69,16 +69,22 @@ NSString *const BING_BASE_URI = @"https://www.bing.com/images/search?q=imgurl:%@
     {
         search_uri = [NSString stringWithFormat:BING_BASE_URI, image_uri];
     }
-//    NSLog(@"Image URI:  %@", image_uri);
-//    NSLog(@"Search URI:  %@", search_uri);
+    //    NSLog(@"Image URI:  %@", image_uri);
+    //    NSLog(@"Search URI:  %@", search_uri);
     if (search_uri)
     {
-        [SFSafariApplication getActiveWindowWithCompletionHandler:^(SFSafariWindow * _Nullable activeWindow) {
-            [activeWindow openTabWithURL:[NSURL URLWithString:search_uri] makeActiveIfPossible:YES completionHandler:^(SFSafariTab * _Nullable tab)
-             {
-                 //NSLog(@"Page opened");
-             }];
+        [page getContainingTabWithCompletionHandler:^(SFSafariTab * _Nonnull tab) {
+            [tab getContainingWindowWithCompletionHandler:^(SFSafariWindow * _Nullable window) {
+                [window openTabWithURL:[NSURL URLWithString:search_uri] makeActiveIfPossible:YES completionHandler:^(SFSafariTab * _Nullable tab) {
+                    // do nothing
+                }];
+            }];
         }];
+//        [SFSafariApplication getActiveWindowWithCompletionHandler:^(SFSafariWindow * _Nullable activeWindow) {
+//            [activeWindow openTabWithURL:[NSURL URLWithString:search_uri] makeActiveIfPossible:YES completionHandler:^(SFSafariTab *tab) {
+//                NSLog(@"Page opened");
+//            }];
+//        }];
     }
 
 }
