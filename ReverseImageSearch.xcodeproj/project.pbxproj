@@ -200,9 +200,25 @@
 				TargetAttributes = {
 					5385E4DF21C96ADC0004AC7C = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.Mac = {
+								enabled = 0;
+							};
+							com.apple.HardenedRuntime = {
+								enabled = 1;
+							};
+						};
 					};
 					5385E4F621C96ADE0004AC7C = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.Mac = {
+								enabled = 0;
+							};
+							com.apple.HardenedRuntime = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -415,6 +431,7 @@
 				CODE_SIGN_ENTITLEMENTS = "ReverseImageSearch Extension/ReverseImageSearch_Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XLREUF5H62;
+				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "ReverseImageSearch Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -433,6 +450,7 @@
 				CODE_SIGN_ENTITLEMENTS = "ReverseImageSearch Extension/ReverseImageSearch_Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XLREUF5H62;
+				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "ReverseImageSearch Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -453,6 +471,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = XLREUF5H62;
+				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = ReverseImageSearch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -471,6 +490,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = XLREUF5H62;
+				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = ReverseImageSearch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
