@@ -30,7 +30,7 @@ function extractImageMetadata(node)
     if (event.target.nodeName == "A")
     {
         uri = new URL(event.target.href, event.target.ownerDocument.baseURI);
-        if (endsWithAny(uri.pathName, [".jpg", ".gif", ".png", ".jpeg", ".tif", ".tiff", ".bmp",  ".heif", ".webp"]))
+        if (uri.pathName && endsWithAny(uri.pathName, [".jpg", ".gif", ".png", ".jpeg", ".tif", ".tiff", ".bmp",  ".heif", ".webp"]))
         {
             is_img = true;
         }

@@ -2,8 +2,8 @@
 //  ViewController.m
 //  ReverseImageSearch
 //
-//  Created by Yiming Liu on 12/18/18.
-//  Copyright © 2018 Yiming Liu. All rights reserved.
+//  Created by Yiming Liu on 11/29/19.
+//  Copyright © 2019 Yiming Liu. All rights reserved.
 //
 
 #import "ViewController.h"

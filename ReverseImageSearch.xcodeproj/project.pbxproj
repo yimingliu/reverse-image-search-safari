@@ -7,39 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5385E4E421C96ADC0004AC7C /* ReverseImageSearch.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 5385E4E321C96ADC0004AC7C /* ReverseImageSearch.entitlements */; };
-		5385E4E721C96ADC0004AC7C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5385E4E621C96ADC0004AC7C /* AppDelegate.m */; };
-		5385E4EA21C96ADC0004AC7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5385E4E821C96ADC0004AC7C /* Main.storyboard */; };
-		5385E4ED21C96ADC0004AC7C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5385E4EC21C96ADC0004AC7C /* ViewController.m */; };
-		5385E4EF21C96ADD0004AC7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5385E4EE21C96ADD0004AC7C /* Assets.xcassets */; };
-		5385E4F221C96ADD0004AC7C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5385E4F121C96ADD0004AC7C /* main.m */; };
-		5385E4F821C96ADE0004AC7C /* ReverseImageSearch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5385E4F721C96ADE0004AC7C /* ReverseImageSearch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		5385E4FD21C96ADE0004AC7C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5385E4FC21C96ADE0004AC7C /* Cocoa.framework */; };
-		5385E50121C96ADE0004AC7C /* SafariExtensionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 5385E50021C96ADE0004AC7C /* SafariExtensionHandler.m */; };
-		5385E50421C96ADE0004AC7C /* SafariExtensionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5385E50321C96ADE0004AC7C /* SafariExtensionViewController.m */; };
-		5385E50721C96ADE0004AC7C /* SafariExtensionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5385E50521C96ADE0004AC7C /* SafariExtensionViewController.xib */; };
-		5385E50A21C96ADE0004AC7C /* reverseimage-injected.js in Resources */ = {isa = PBXBuildFile; fileRef = 5385E50921C96ADE0004AC7C /* reverseimage-injected.js */; };
-		5385E50C21C96ADE0004AC7C /* ToolbarItemIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 5385E50B21C96ADE0004AC7C /* ToolbarItemIcon.pdf */; };
+		537606C92391D2A100EEDC2F /* ReverseImageSearch.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 537606C82391D2A100EEDC2F /* ReverseImageSearch.entitlements */; };
+		537606CC2391D2A100EEDC2F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 537606CB2391D2A100EEDC2F /* AppDelegate.m */; };
+		537606CF2391D2A100EEDC2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 537606CD2391D2A100EEDC2F /* Main.storyboard */; };
+		537606D22391D2A100EEDC2F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 537606D12391D2A100EEDC2F /* ViewController.m */; };
+		537606D42391D2A300EEDC2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 537606D32391D2A300EEDC2F /* Assets.xcassets */; };
+		537606D72391D2A300EEDC2F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 537606D62391D2A300EEDC2F /* main.m */; };
+		537606DD2391D2A300EEDC2F /* ReverseImageSearch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 537606DC2391D2A300EEDC2F /* ReverseImageSearch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		537606E22391D2A300EEDC2F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 537606E12391D2A300EEDC2F /* Cocoa.framework */; };
+		537606E62391D2A300EEDC2F /* SafariExtensionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 537606E52391D2A300EEDC2F /* SafariExtensionHandler.m */; };
+		537606E92391D2A300EEDC2F /* SafariExtensionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 537606E82391D2A300EEDC2F /* SafariExtensionViewController.m */; };
+		537606EC2391D2A300EEDC2F /* SafariExtensionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 537606EA2391D2A300EEDC2F /* SafariExtensionViewController.xib */; };
+		537606F12391D2A300EEDC2F /* ToolbarItemIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 537606F02391D2A300EEDC2F /* ToolbarItemIcon.pdf */; };
+		537606FE2391D33500EEDC2F /* reverseimage-injected.js in Resources */ = {isa = PBXBuildFile; fileRef = 537606FC2391D33100EEDC2F /* reverseimage-injected.js */; };
+		537607042391D3D500EEDC2F /* search_engines.plist in Resources */ = {isa = PBXBuildFile; fileRef = 537607032391D3D500EEDC2F /* search_engines.plist */; };
+		537607052391D3D500EEDC2F /* search_engines.plist in Resources */ = {isa = PBXBuildFile; fileRef = 537607032391D3D500EEDC2F /* search_engines.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		5385E4F921C96ADE0004AC7C /* PBXContainerItemProxy */ = {
+		537606DE2391D2A300EEDC2F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 5385E4D821C96ADC0004AC7C /* Project object */;
+			containerPortal = 537606BD2391D2A100EEDC2F /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 5385E4F621C96ADE0004AC7C;
+			remoteGlobalIDString = 537606DB2391D2A300EEDC2F;
 			remoteInfo = "ReverseImageSearch Extension";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		5385E51321C96ADE0004AC7C /* Embed App Extensions */ = {
+		537606F82391D2A300EEDC2F /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				5385E4F821C96ADE0004AC7C /* ReverseImageSearch Extension.appex in Embed App Extensions */,
+				537606DD2391D2A300EEDC2F /* ReverseImageSearch Extension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -47,138 +49,146 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		5385E4E021C96ADC0004AC7C /* ReverseImageSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReverseImageSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		5385E4E321C96ADC0004AC7C /* ReverseImageSearch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ReverseImageSearch.entitlements; sourceTree = "<group>"; };
-		5385E4E521C96ADC0004AC7C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		5385E4E621C96ADC0004AC7C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		5385E4E921C96ADC0004AC7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		5385E4EB21C96ADC0004AC7C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		5385E4EC21C96ADC0004AC7C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		5385E4EE21C96ADD0004AC7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		5385E4F021C96ADD0004AC7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5385E4F121C96ADD0004AC7C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		5385E4F721C96ADE0004AC7C /* ReverseImageSearch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "ReverseImageSearch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5385E4FC21C96ADE0004AC7C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
-		5385E4FF21C96ADE0004AC7C /* SafariExtensionHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SafariExtensionHandler.h; sourceTree = "<group>"; };
-		5385E50021C96ADE0004AC7C /* SafariExtensionHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SafariExtensionHandler.m; sourceTree = "<group>"; };
-		5385E50221C96ADE0004AC7C /* SafariExtensionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SafariExtensionViewController.h; sourceTree = "<group>"; };
-		5385E50321C96ADE0004AC7C /* SafariExtensionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SafariExtensionViewController.m; sourceTree = "<group>"; };
-		5385E50621C96ADE0004AC7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SafariExtensionViewController.xib; sourceTree = "<group>"; };
-		5385E50821C96ADE0004AC7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5385E50921C96ADE0004AC7C /* reverseimage-injected.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "reverseimage-injected.js"; sourceTree = "<group>"; };
-		5385E50B21C96ADE0004AC7C /* ToolbarItemIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ToolbarItemIcon.pdf; sourceTree = "<group>"; };
-		5385E50D21C96ADE0004AC7C /* ReverseImageSearch_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ReverseImageSearch_Extension.entitlements; sourceTree = "<group>"; };
-		5385E51721C9B4C80004AC7C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		537606C52391D2A100EEDC2F /* ReverseImageSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReverseImageSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		537606C82391D2A100EEDC2F /* ReverseImageSearch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ReverseImageSearch.entitlements; sourceTree = "<group>"; };
+		537606CA2391D2A100EEDC2F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		537606CB2391D2A100EEDC2F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		537606CE2391D2A100EEDC2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		537606D02391D2A100EEDC2F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		537606D12391D2A100EEDC2F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		537606D32391D2A300EEDC2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		537606D52391D2A300EEDC2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		537606D62391D2A300EEDC2F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		537606DC2391D2A300EEDC2F /* ReverseImageSearch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "ReverseImageSearch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		537606E12391D2A300EEDC2F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		537606E42391D2A300EEDC2F /* SafariExtensionHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SafariExtensionHandler.h; sourceTree = "<group>"; };
+		537606E52391D2A300EEDC2F /* SafariExtensionHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SafariExtensionHandler.m; sourceTree = "<group>"; };
+		537606E72391D2A300EEDC2F /* SafariExtensionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SafariExtensionViewController.h; sourceTree = "<group>"; };
+		537606E82391D2A300EEDC2F /* SafariExtensionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SafariExtensionViewController.m; sourceTree = "<group>"; };
+		537606EB2391D2A300EEDC2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SafariExtensionViewController.xib; sourceTree = "<group>"; };
+		537606ED2391D2A300EEDC2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		537606F02391D2A300EEDC2F /* ToolbarItemIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ToolbarItemIcon.pdf; sourceTree = "<group>"; };
+		537606F22391D2A300EEDC2F /* ReverseImageSearch_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ReverseImageSearch_Extension.entitlements; sourceTree = "<group>"; };
+		537606FC2391D33100EEDC2F /* reverseimage-injected.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "reverseimage-injected.js"; sourceTree = "<group>"; };
+		537607032391D3D500EEDC2F /* search_engines.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = search_engines.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		5385E4DD21C96ADC0004AC7C /* Frameworks */ = {
+		537606C22391D2A100EEDC2F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5385E4F421C96ADE0004AC7C /* Frameworks */ = {
+		537606D92391D2A300EEDC2F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5385E4FD21C96ADE0004AC7C /* Cocoa.framework in Frameworks */,
+				537606E22391D2A300EEDC2F /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5385E4D721C96ADC0004AC7C = {
+		537606BC2391D2A100EEDC2F = {
 			isa = PBXGroup;
 			children = (
-				5385E51721C9B4C80004AC7C /* README.md */,
-				5385E4E221C96ADC0004AC7C /* ReverseImageSearch */,
-				5385E4FE21C96ADE0004AC7C /* ReverseImageSearch Extension */,
-				5385E4FB21C96ADE0004AC7C /* Frameworks */,
-				5385E4E121C96ADC0004AC7C /* Products */,
+				537607022391D3B900EEDC2F /* Shared */,
+				537606C72391D2A100EEDC2F /* ReverseImageSearch */,
+				537606E32391D2A300EEDC2F /* ReverseImageSearch Extension */,
+				537606E02391D2A300EEDC2F /* Frameworks */,
+				537606C62391D2A100EEDC2F /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		5385E4E121C96ADC0004AC7C /* Products */ = {
+		537606C62391D2A100EEDC2F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5385E4E021C96ADC0004AC7C /* ReverseImageSearch.app */,
-				5385E4F721C96ADE0004AC7C /* ReverseImageSearch Extension.appex */,
+				537606C52391D2A100EEDC2F /* ReverseImageSearch.app */,
+				537606DC2391D2A300EEDC2F /* ReverseImageSearch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5385E4E221C96ADC0004AC7C /* ReverseImageSearch */ = {
+		537606C72391D2A100EEDC2F /* ReverseImageSearch */ = {
 			isa = PBXGroup;
 			children = (
-				5385E4E321C96ADC0004AC7C /* ReverseImageSearch.entitlements */,
-				5385E4E521C96ADC0004AC7C /* AppDelegate.h */,
-				5385E4E621C96ADC0004AC7C /* AppDelegate.m */,
-				5385E4E821C96ADC0004AC7C /* Main.storyboard */,
-				5385E4EB21C96ADC0004AC7C /* ViewController.h */,
-				5385E4EC21C96ADC0004AC7C /* ViewController.m */,
-				5385E4EE21C96ADD0004AC7C /* Assets.xcassets */,
-				5385E4F021C96ADD0004AC7C /* Info.plist */,
-				5385E4F121C96ADD0004AC7C /* main.m */,
+				537606C82391D2A100EEDC2F /* ReverseImageSearch.entitlements */,
+				537606CA2391D2A100EEDC2F /* AppDelegate.h */,
+				537606CB2391D2A100EEDC2F /* AppDelegate.m */,
+				537606CD2391D2A100EEDC2F /* Main.storyboard */,
+				537606D02391D2A100EEDC2F /* ViewController.h */,
+				537606D12391D2A100EEDC2F /* ViewController.m */,
+				537606D32391D2A300EEDC2F /* Assets.xcassets */,
+				537606D52391D2A300EEDC2F /* Info.plist */,
+				537606D62391D2A300EEDC2F /* main.m */,
 			);
 			path = ReverseImageSearch;
 			sourceTree = "<group>";
 		};
-		5385E4FB21C96ADE0004AC7C /* Frameworks */ = {
+		537606E02391D2A300EEDC2F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5385E4FC21C96ADE0004AC7C /* Cocoa.framework */,
+				537606E12391D2A300EEDC2F /* Cocoa.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		5385E4FE21C96ADE0004AC7C /* ReverseImageSearch Extension */ = {
+		537606E32391D2A300EEDC2F /* ReverseImageSearch Extension */ = {
 			isa = PBXGroup;
 			children = (
-				5385E4FF21C96ADE0004AC7C /* SafariExtensionHandler.h */,
-				5385E50021C96ADE0004AC7C /* SafariExtensionHandler.m */,
-				5385E50221C96ADE0004AC7C /* SafariExtensionViewController.h */,
-				5385E50321C96ADE0004AC7C /* SafariExtensionViewController.m */,
-				5385E50521C96ADE0004AC7C /* SafariExtensionViewController.xib */,
-				5385E50821C96ADE0004AC7C /* Info.plist */,
-				5385E50921C96ADE0004AC7C /* reverseimage-injected.js */,
-				5385E50B21C96ADE0004AC7C /* ToolbarItemIcon.pdf */,
-				5385E50D21C96ADE0004AC7C /* ReverseImageSearch_Extension.entitlements */,
+				537606FC2391D33100EEDC2F /* reverseimage-injected.js */,
+				537606E42391D2A300EEDC2F /* SafariExtensionHandler.h */,
+				537606E52391D2A300EEDC2F /* SafariExtensionHandler.m */,
+				537606E72391D2A300EEDC2F /* SafariExtensionViewController.h */,
+				537606E82391D2A300EEDC2F /* SafariExtensionViewController.m */,
+				537606EA2391D2A300EEDC2F /* SafariExtensionViewController.xib */,
+				537606ED2391D2A300EEDC2F /* Info.plist */,
+				537606F02391D2A300EEDC2F /* ToolbarItemIcon.pdf */,
+				537606F22391D2A300EEDC2F /* ReverseImageSearch_Extension.entitlements */,
 			);
 			path = "ReverseImageSearch Extension";
+			sourceTree = "<group>";
+		};
+		537607022391D3B900EEDC2F /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				537607032391D3D500EEDC2F /* search_engines.plist */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5385E4DF21C96ADC0004AC7C /* ReverseImageSearch */ = {
+		537606C42391D2A100EEDC2F /* ReverseImageSearch */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5385E51421C96ADE0004AC7C /* Build configuration list for PBXNativeTarget "ReverseImageSearch" */;
+			buildConfigurationList = 537606F92391D2A300EEDC2F /* Build configuration list for PBXNativeTarget "ReverseImageSearch" */;
 			buildPhases = (
-				5385E4DC21C96ADC0004AC7C /* Sources */,
-				5385E4DD21C96ADC0004AC7C /* Frameworks */,
-				5385E4DE21C96ADC0004AC7C /* Resources */,
-				5385E51321C96ADE0004AC7C /* Embed App Extensions */,
+				537606C12391D2A100EEDC2F /* Sources */,
+				537606C22391D2A100EEDC2F /* Frameworks */,
+				537606C32391D2A100EEDC2F /* Resources */,
+				537606F82391D2A300EEDC2F /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				5385E4FA21C96ADE0004AC7C /* PBXTargetDependency */,
+				537606DF2391D2A300EEDC2F /* PBXTargetDependency */,
 			);
 			name = ReverseImageSearch;
 			productName = ReverseImageSearch;
-			productReference = 5385E4E021C96ADC0004AC7C /* ReverseImageSearch.app */;
+			productReference = 537606C52391D2A100EEDC2F /* ReverseImageSearch.app */;
 			productType = "com.apple.product-type.application";
 		};
-		5385E4F621C96ADE0004AC7C /* ReverseImageSearch Extension */ = {
+		537606DB2391D2A300EEDC2F /* ReverseImageSearch Extension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5385E51021C96ADE0004AC7C /* Build configuration list for PBXNativeTarget "ReverseImageSearch Extension" */;
+			buildConfigurationList = 537606F52391D2A300EEDC2F /* Build configuration list for PBXNativeTarget "ReverseImageSearch Extension" */;
 			buildPhases = (
-				5385E4F321C96ADE0004AC7C /* Sources */,
-				5385E4F421C96ADE0004AC7C /* Frameworks */,
-				5385E4F521C96ADE0004AC7C /* Resources */,
+				537606D82391D2A300EEDC2F /* Sources */,
+				537606D92391D2A300EEDC2F /* Frameworks */,
+				537606DA2391D2A300EEDC2F /* Resources */,
 			);
 			buildRules = (
 			);
@@ -186,43 +196,27 @@
 			);
 			name = "ReverseImageSearch Extension";
 			productName = "ReverseImageSearch Extension";
-			productReference = 5385E4F721C96ADE0004AC7C /* ReverseImageSearch Extension.appex */;
+			productReference = 537606DC2391D2A300EEDC2F /* ReverseImageSearch Extension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		5385E4D821C96ADC0004AC7C /* Project object */ = {
+		537606BD2391D2A100EEDC2F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = "Yiming Liu";
 				TargetAttributes = {
-					5385E4DF21C96ADC0004AC7C = {
-						CreatedOnToolsVersion = 10.1;
-						SystemCapabilities = {
-							com.apple.ApplicationGroups.Mac = {
-								enabled = 0;
-							};
-							com.apple.HardenedRuntime = {
-								enabled = 1;
-							};
-						};
+					537606C42391D2A100EEDC2F = {
+						CreatedOnToolsVersion = 11.2.1;
 					};
-					5385E4F621C96ADE0004AC7C = {
-						CreatedOnToolsVersion = 10.1;
-						SystemCapabilities = {
-							com.apple.ApplicationGroups.Mac = {
-								enabled = 0;
-							};
-							com.apple.HardenedRuntime = {
-								enabled = 1;
-							};
-						};
+					537606DB2391D2A300EEDC2F = {
+						CreatedOnToolsVersion = 11.2.1;
 					};
 				};
 			};
-			buildConfigurationList = 5385E4DB21C96ADC0004AC7C /* Build configuration list for PBXProject "ReverseImageSearch" */;
+			buildConfigurationList = 537606C02391D2A100EEDC2F /* Build configuration list for PBXProject "ReverseImageSearch" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -230,83 +224,85 @@
 				en,
 				Base,
 			);
-			mainGroup = 5385E4D721C96ADC0004AC7C;
-			productRefGroup = 5385E4E121C96ADC0004AC7C /* Products */;
+			mainGroup = 537606BC2391D2A100EEDC2F;
+			productRefGroup = 537606C62391D2A100EEDC2F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5385E4DF21C96ADC0004AC7C /* ReverseImageSearch */,
-				5385E4F621C96ADE0004AC7C /* ReverseImageSearch Extension */,
+				537606C42391D2A100EEDC2F /* ReverseImageSearch */,
+				537606DB2391D2A300EEDC2F /* ReverseImageSearch Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		5385E4DE21C96ADC0004AC7C /* Resources */ = {
+		537606C32391D2A100EEDC2F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5385E4E421C96ADC0004AC7C /* ReverseImageSearch.entitlements in Resources */,
-				5385E4EF21C96ADD0004AC7C /* Assets.xcassets in Resources */,
-				5385E4EA21C96ADC0004AC7C /* Main.storyboard in Resources */,
+				537607042391D3D500EEDC2F /* search_engines.plist in Resources */,
+				537606C92391D2A100EEDC2F /* ReverseImageSearch.entitlements in Resources */,
+				537606D42391D2A300EEDC2F /* Assets.xcassets in Resources */,
+				537606CF2391D2A100EEDC2F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5385E4F521C96ADE0004AC7C /* Resources */ = {
+		537606DA2391D2A300EEDC2F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5385E50C21C96ADE0004AC7C /* ToolbarItemIcon.pdf in Resources */,
-				5385E50721C96ADE0004AC7C /* SafariExtensionViewController.xib in Resources */,
-				5385E50A21C96ADE0004AC7C /* reverseimage-injected.js in Resources */,
+				537607052391D3D500EEDC2F /* search_engines.plist in Resources */,
+				537606F12391D2A300EEDC2F /* ToolbarItemIcon.pdf in Resources */,
+				537606FE2391D33500EEDC2F /* reverseimage-injected.js in Resources */,
+				537606EC2391D2A300EEDC2F /* SafariExtensionViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		5385E4DC21C96ADC0004AC7C /* Sources */ = {
+		537606C12391D2A100EEDC2F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5385E4ED21C96ADC0004AC7C /* ViewController.m in Sources */,
-				5385E4F221C96ADD0004AC7C /* main.m in Sources */,
-				5385E4E721C96ADC0004AC7C /* AppDelegate.m in Sources */,
+				537606D22391D2A100EEDC2F /* ViewController.m in Sources */,
+				537606D72391D2A300EEDC2F /* main.m in Sources */,
+				537606CC2391D2A100EEDC2F /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5385E4F321C96ADE0004AC7C /* Sources */ = {
+		537606D82391D2A300EEDC2F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5385E50421C96ADE0004AC7C /* SafariExtensionViewController.m in Sources */,
-				5385E50121C96ADE0004AC7C /* SafariExtensionHandler.m in Sources */,
+				537606E92391D2A300EEDC2F /* SafariExtensionViewController.m in Sources */,
+				537606E62391D2A300EEDC2F /* SafariExtensionHandler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		5385E4FA21C96ADE0004AC7C /* PBXTargetDependency */ = {
+		537606DF2391D2A300EEDC2F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5385E4F621C96ADE0004AC7C /* ReverseImageSearch Extension */;
-			targetProxy = 5385E4F921C96ADE0004AC7C /* PBXContainerItemProxy */;
+			target = 537606DB2391D2A300EEDC2F /* ReverseImageSearch Extension */;
+			targetProxy = 537606DE2391D2A300EEDC2F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		5385E4E821C96ADC0004AC7C /* Main.storyboard */ = {
+		537606CD2391D2A100EEDC2F /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				5385E4E921C96ADC0004AC7C /* Base */,
+				537606CE2391D2A100EEDC2F /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		5385E50521C96ADE0004AC7C /* SafariExtensionViewController.xib */ = {
+		537606EA2391D2A300EEDC2F /* SafariExtensionViewController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				5385E50621C96ADE0004AC7C /* Base */,
+				537606EB2391D2A300EEDC2F /* Base */,
 			);
 			name = SafariExtensionViewController.xib;
 			sourceTree = "<group>";
@@ -314,7 +310,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		5385E50E21C96ADE0004AC7C /* Debug */ = {
+		537606F32391D2A300EEDC2F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -346,7 +342,6 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "Mac Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -373,7 +368,7 @@
 			};
 			name = Debug;
 		};
-		5385E50F21C96ADE0004AC7C /* Release */ = {
+		537606F42391D2A300EEDC2F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -405,7 +400,6 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "Mac Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -425,7 +419,7 @@
 			};
 			name = Release;
 		};
-		5385E51121C96ADE0004AC7C /* Debug */ = {
+		537606F62391D2A300EEDC2F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "ReverseImageSearch Extension/ReverseImageSearch_Extension.entitlements";
@@ -438,13 +432,13 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.yimingliu.ReverseImageSearch-Extension";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yimingliu.ReverseImageSearchExt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
-		5385E51221C96ADE0004AC7C /* Release */ = {
+		537606F72391D2A300EEDC2F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "ReverseImageSearch Extension/ReverseImageSearch_Extension.entitlements";
@@ -457,13 +451,13 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.yimingliu.ReverseImageSearch-Extension";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yimingliu.ReverseImageSearchExt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
-		5385E51521C96ADE0004AC7C /* Debug */ = {
+		537606FA2391D2A300EEDC2F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -482,7 +476,7 @@
 			};
 			name = Debug;
 		};
-		5385E51621C96ADE0004AC7C /* Release */ = {
+		537606FB2391D2A300EEDC2F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -504,34 +498,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5385E4DB21C96ADC0004AC7C /* Build configuration list for PBXProject "ReverseImageSearch" */ = {
+		537606C02391D2A100EEDC2F /* Build configuration list for PBXProject "ReverseImageSearch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5385E50E21C96ADE0004AC7C /* Debug */,
-				5385E50F21C96ADE0004AC7C /* Release */,
+				537606F32391D2A300EEDC2F /* Debug */,
+				537606F42391D2A300EEDC2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5385E51021C96ADE0004AC7C /* Build configuration list for PBXNativeTarget "ReverseImageSearch Extension" */ = {
+		537606F52391D2A300EEDC2F /* Build configuration list for PBXNativeTarget "ReverseImageSearch Extension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5385E51121C96ADE0004AC7C /* Debug */,
-				5385E51221C96ADE0004AC7C /* Release */,
+				537606F62391D2A300EEDC2F /* Debug */,
+				537606F72391D2A300EEDC2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5385E51421C96ADE0004AC7C /* Build configuration list for PBXNativeTarget "ReverseImageSearch" */ = {
+		537606F92391D2A300EEDC2F /* Build configuration list for PBXNativeTarget "ReverseImageSearch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5385E51521C96ADE0004AC7C /* Debug */,
-				5385E51621C96ADE0004AC7C /* Release */,
+				537606FA2391D2A300EEDC2F /* Debug */,
+				537606FB2391D2A300EEDC2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 5385E4D821C96ADC0004AC7C /* Project object */;
+	rootObject = 537606BD2391D2A100EEDC2F /* Project object */;
 }

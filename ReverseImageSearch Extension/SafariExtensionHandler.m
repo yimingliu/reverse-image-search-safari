@@ -9,9 +9,6 @@
 #import "SafariExtensionHandler.h"
 #import "SafariExtensionViewController.h"
 
-NSString *const GOOGLE_BASE_URI = @"https://www.google.com/searchbyimage?image_url=%@";
-NSString *const BING_BASE_URI = @"https://www.bing.com/images/search?q=imgurl:%@&view=detailv2&selectedIndex=0&pageurl=&mode=ImageViewer&iss=sbi";
-
 @interface SafariExtensionHandler ()
 
 @end
@@ -37,12 +34,11 @@ NSString *const BING_BASE_URI = @"https://www.bing.com/images/search?q=imgurl:%@
 
 - (void)validateContextMenuItemWithCommand:(NSString *)command inPage:(SFSafariPage *)page userInfo:(NSDictionary<NSString *,id> *)userInfo validationHandler:(void (^)(BOOL shouldHide, NSString *text))validationHandler
 {
-    
-    NSString *target_uri = [userInfo valueForKey:@"uri"];
-    //NSLog(@"Got to here with 2 %@ %@ %@", entity_id, id_type, site);
-    if ([command isEqualToString:@"search-google"] || [command isEqualToString:@"search-bing"])
+    NSDictionary *search_engines = [self searchEngines];
+    NSString* search_engine_path = [search_engines objectForKey:command];
+    if (search_engine_path)
     {
-        //NSLog(@"URI %@", target_uri);
+        NSString *target_uri = [userInfo objectForKey:@"uri"];
         if (target_uri)
             validationHandler(NO, nil);
         else
@@ -54,25 +50,23 @@ NSString *const BING_BASE_URI = @"https://www.bing.com/images/search?q=imgurl:%@
     }
 }
 
+- (NSString *)getSearchEngineString:(NSString *)name
+{
+    NSDictionary *search_engines = [self searchEngines];
+    NSString* search_engine_path = [search_engines objectForKey:name];
+    return search_engine_path;
+}
+
 - (void)contextMenuItemSelectedWithCommand:(NSString *)command
                                     inPage:(SFSafariPage *)page userInfo:(NSDictionary<NSString *, id> *)userInfo
 {
     NSString *image_uri = [userInfo valueForKey:@"uri"];
-    NSString *search_uri = NULL;
+    NSString *search_uri = [self getSearchEngineString:command];
     // it turns out using URLQueryAllowedCharacterSet doesn't actually percent-encode for some reason.  Go figure.
     image_uri = [image_uri stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet alphanumericCharacterSet]];
-    if ([command isEqualToString:@"search-google"] && image_uri)
-    {
-        search_uri = [NSString stringWithFormat:GOOGLE_BASE_URI, image_uri];
-    }
-    else if ([command isEqualToString:@"search-bing"] && image_uri)
-    {
-        search_uri = [NSString stringWithFormat:BING_BASE_URI, image_uri];
-    }
-    //    NSLog(@"Image URI:  %@", image_uri);
-    //    NSLog(@"Search URI:  %@", search_uri);
     if (search_uri)
     {
+        search_uri = [NSString stringWithFormat:search_uri, image_uri];
         [page getContainingTabWithCompletionHandler:^(SFSafariTab * _Nonnull tab) {
             [tab getContainingWindowWithCompletionHandler:^(SFSafariWindow * _Nullable window) {
                 [window openTabWithURL:[NSURL URLWithString:search_uri] makeActiveIfPossible:YES completionHandler:^(SFSafariTab * _Nullable tab) {
@@ -91,6 +85,17 @@ NSString *const BING_BASE_URI = @"https://www.bing.com/images/search?q=imgurl:%@
 
 - (SFSafariExtensionViewController *)popoverViewController {
     return [SafariExtensionViewController sharedController];
+}
+
+- (NSDictionary *)searchEngines
+{
+    static NSDictionary *search_engines;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        NSString *path = [[NSBundle mainBundle] pathForResource:@"search_engines" ofType:@"plist"];
+        search_engines = [NSDictionary dictionaryWithContentsOfFile:path];
+    });
+    return search_engines;
 }
 
 @end

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>google</key>
+	<string>https://www.google.com/searchbyimage?image_url=%@</string>
+	<key>bing</key>
+	<string>https://www.bing.com/images/search?q=imgurl:%@&amp;view=detailv2&amp;selectedIndex=0&amp;pageurl=&amp;mode=ImageViewer&amp;iss=sbi</string>
+	<key>yandex</key>
+	<string>https://yandex.com/images/search?rpt=imageview&amp;url=%@</string>
+	<key>tineye</key>
+	<string>https://tineye.com/search/?url=%@</string>
+	<key>ukiyo-e</key>
+	<string>https://ukiyo-e.org/upload/?url=%@</string>
+</dict>
+</plist>
