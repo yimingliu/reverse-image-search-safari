@@ -22,6 +22,7 @@
 		537606FE2391D33500EEDC2F /* reverseimage-injected.js in Resources */ = {isa = PBXBuildFile; fileRef = 537606FC2391D33100EEDC2F /* reverseimage-injected.js */; };
 		537607042391D3D500EEDC2F /* search_engines.plist in Resources */ = {isa = PBXBuildFile; fileRef = 537607032391D3D500EEDC2F /* search_engines.plist */; };
 		537607052391D3D500EEDC2F /* search_engines.plist in Resources */ = {isa = PBXBuildFile; fileRef = 537607032391D3D500EEDC2F /* search_engines.plist */; };
+		5376070723920BAE00EEDC2F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5376070623920BAE00EEDC2F /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		537606F22391D2A300EEDC2F /* ReverseImageSearch_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ReverseImageSearch_Extension.entitlements; sourceTree = "<group>"; };
 		537606FC2391D33100EEDC2F /* reverseimage-injected.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "reverseimage-injected.js"; sourceTree = "<group>"; };
 		537607032391D3D500EEDC2F /* search_engines.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = search_engines.plist; sourceTree = "<group>"; };
+		5376070623920BAE00EEDC2F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 		537606BC2391D2A100EEDC2F = {
 			isa = PBXGroup;
 			children = (
+				5376070623920BAE00EEDC2F /* README.md */,
 				537607022391D3B900EEDC2F /* Shared */,
 				537606C72391D2A100EEDC2F /* ReverseImageSearch */,
 				537606E32391D2A300EEDC2F /* ReverseImageSearch Extension */,
@@ -242,6 +245,7 @@
 			files = (
 				537607042391D3D500EEDC2F /* search_engines.plist in Resources */,
 				537606C92391D2A100EEDC2F /* ReverseImageSearch.entitlements in Resources */,
+				5376070723920BAE00EEDC2F /* README.md in Resources */,
 				537606D42391D2A300EEDC2F /* Assets.xcassets in Resources */,
 				537606CF2391D2A100EEDC2F /* Main.storyboard in Resources */,
 			);

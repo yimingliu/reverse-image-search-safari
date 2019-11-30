@@ -12,7 +12,7 @@ This extension is intended to replace legacy reverse image search extensions tha
 
 3.  Reload the current active page to allow the injected script to take effect.
 
-The containing app simply installs the extension into Safari, and has no other function.  However, it cannot be deleted after installation, or Safari will automatically remove the companion extension as well.  This is how the new Safari extension model works (as annoying as it is).
+The containing app can be used to configure the supported search engines.
 
 For the extension to work, it obviously requires access to all websites being visited, in order to retrieve images.  Apple (rightfully) warns that giving this permission means the extension can read any data, on any website being visited.  Users paranoid about allowing this level of access can read the source code, to see that nothing nefarious is happening.
 
@@ -30,7 +30,7 @@ The build target is now set for macOS 10.13.  Unfortunately, I do not have a mac
 
 ## Future work
 
-* Add other image search engines like TinEye.
+* Add other image search engines
 
 * If the site in question does not allow Google/Bing direct access to images, proxy the request by downloading the image and then POST'ing it to the image search endpoint.  This might be difficult since the app extension itself does not share session with the current running browser instance, and the image might be too large for message-passing. 
 
