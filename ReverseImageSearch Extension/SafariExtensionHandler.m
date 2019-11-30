@@ -36,7 +36,9 @@
 {
     NSDictionary *search_engines = [self searchEngines];
     NSString* search_engine_path = [search_engines objectForKey:command];
-    if (search_engine_path)
+    NSUserDefaults *defaults = [self userDefaults:[self createAppDefaults]];
+    BOOL is_active = [defaults boolForKey:command];
+    if (search_engine_path && is_active)
     {
         NSString *target_uri = [userInfo objectForKey:@"uri"];
         if (target_uri)
@@ -96,6 +98,24 @@
         search_engines = [NSDictionary dictionaryWithContentsOfFile:path];
     });
     return search_engines;
+}
+
+- (NSUserDefaults *)userDefaults:(NSDictionary *)appDefaults
+{
+    NSUserDefaults* defaults = [[NSUserDefaults alloc] initWithSuiteName:@"XLREUF5H62.groups.reverseimagesearch"];
+    [defaults registerDefaults:appDefaults];
+    return defaults;
+}
+
+- (NSDictionary *)createAppDefaults
+{
+    NSDictionary *searchEngines = [self searchEngines];
+    NSMutableDictionary *appDefaults = [NSMutableDictionary dictionary];
+    for (NSString *key in searchEngines)
+    {
+        [appDefaults setValue:@YES forKey:key];
+    }
+    return appDefaults;
 }
 
 @end

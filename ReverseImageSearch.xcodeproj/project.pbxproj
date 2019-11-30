@@ -464,6 +464,7 @@
 				CODE_SIGN_ENTITLEMENTS = ReverseImageSearch/ReverseImageSearch.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = XLREUF5H62;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = ReverseImageSearch/Info.plist;
@@ -483,6 +484,7 @@
 				CODE_SIGN_ENTITLEMENTS = ReverseImageSearch/ReverseImageSearch.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = XLREUF5H62;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = ReverseImageSearch/Info.plist;

@@ -11,6 +11,7 @@
 @interface ViewController : NSViewController
 
 @property (weak, nonatomic) IBOutlet NSTextField * appNameLabel;
+@property (weak, nonatomic) IBOutlet NSStackView * stackView;
 
 - (IBAction)openSafariExtensionPreferences:(id)sender;
 
