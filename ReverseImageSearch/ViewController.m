@@ -18,8 +18,9 @@
     NSDictionary *appDefaults = [self createAppDefaults];
     NSUserDefaults* defaults = [self userDefaults:appDefaults];
     NSUserDefaultsController *defaultsController = [[NSUserDefaultsController alloc] initWithDefaults:defaults initialValues:appDefaults];
-    
-    for (NSString* key in appDefaults)
+    NSArray *keys = [appDefaults allKeys];
+    keys = [keys sortedArrayUsingSelector:@selector(compare:)];
+    for (NSString* key in keys)
     {
         NSButton* checkbox = [NSButton checkboxWithTitle:key target:nil action:nil];
         [checkbox bind:@"value"
