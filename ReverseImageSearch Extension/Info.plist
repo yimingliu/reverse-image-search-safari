@@ -39,33 +39,33 @@
 		<array>
 			<dict>
 				<key>Command</key>
-				<string>google</string>
-				<key>Text</key>
-				<string>Google This Image</string>
-			</dict>
-			<dict>
-				<key>Command</key>
 				<string>bing</string>
 				<key>Text</key>
-				<string>Bing This Image</string>
+				<string>Search Image with Bing</string>
 			</dict>
 			<dict>
 				<key>Command</key>
-				<string>yandex</string>
+				<string>google</string>
 				<key>Text</key>
-				<string>Yandex This Image</string>
+				<string>Search Image with Google</string>
 			</dict>
 			<dict>
 				<key>Command</key>
 				<string>tineye</string>
 				<key>Text</key>
-				<string>TinEye This Image</string>
+				<string>Search Image with TinEye</string>
 			</dict>
 			<dict>
 				<key>Command</key>
 				<string>ukiyo-e</string>
 				<key>Text</key>
-				<string>Ukiyo-e This Image</string>
+				<string>Search Image with Ukiyo-e</string>
+			</dict>
+			<dict>
+				<key>Command</key>
+				<string>yandex</string>
+				<key>Text</key>
+				<string>Search Image with Yandex</string>
 			</dict>
 		</array>
 		<key>SFSafariWebsiteAccess</key>
