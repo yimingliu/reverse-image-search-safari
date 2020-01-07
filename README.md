@@ -1,12 +1,12 @@
 # Reverse Image Search - a Safari App Extension
 
-This Safari extension allows reverse image searches (aka "search by image" or "search using an image") directly from a web page.  When you come across an image on any website, just right-click it to open a context menu, and select "Google This Image"or "Bing This Image" to run a search for other instances of the target image, or to find similar images. 
+This Safari extension allows reverse image searches (aka "search by image" or "search using an image") directly from a web page.  When you come across an image on any website, just right-click it to open a context menu, and select "Search with Google", etc. to run a search for other instances of the target image, or to find similar images. 
 
 This extension is intended to replace legacy reverse image search extensions that were disabled by Safari 12's move to the app extension model.
 
 ## Installation
 
-1.  Download and run the containing app "ReverseImageSearch.app".  On Github, download from the Releases tab of the repository if a release is available (if not available, open an issue on Github -- I probably just forgot to make a build).   
+1.  Download and run the containing app "ReverseImageSearch.app".  On Github, download from the [Releases tab](https://github.com/yimingliu/reverse-image-search-safari/releases) of the repository if a release is available (if not available, open an issue on Github -- I probably just forgot to make a build).   
 
 2.  Go into `Safari -> Preferences -> Extensions` and activate the Reverse Image Search extension.  
 
@@ -20,17 +20,17 @@ If you prefer to compile from source (to be absolutely sure that nothing nefario
 
 ## Usage
 
-Right-click on most images on a web page, and pick either "Google This Image" or "Bing This Image".  If the page allows direct image hotlinking from Google or Bing, this should redirect to the reverse image search results.
+Right-click on most images on a web page, and pick "Search with Google", "Search with Bing", etc.  If the page allows direct image hotlinking from Google or Bing, this should redirect to the reverse image search results.
 
 ## Compatibility
 
-Tested on macOS 10.14 Mojave and Safari 12.0.1.  It may or may not work with other combinations of {macOS, Safari} versions.
+Tested on macOS 10.15.2 Catalina and Safari 13.0.4.  It may or may not work with other combinations of {macOS, Safari} versions, as I can only test on my own personal machine.
 
 The build target is now set for macOS 10.13.  Unfortunately, I do not have a macOS 10.13 machine to test with, so if it turns out to not work on 10.13, I cannot offer support.  I will take patches or pull requests, however.
 
 ## Future work
 
-* Add other image search engines
+* Add other image search engines (feel free to propose new search engines in the Github issues)
 
 * If the site in question does not allow Google/Bing direct access to images, proxy the request by downloading the image and then POST'ing it to the image search endpoint.  This might be difficult since the app extension itself does not share session with the current running browser instance, and the image might be too large for message-passing. 
 
