@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		536868DF2439CE520036DE43 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 536868DE2439CE520036DE43 /* Credits.rtf */; };
 		537606C92391D2A100EEDC2F /* ReverseImageSearch.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 537606C82391D2A100EEDC2F /* ReverseImageSearch.entitlements */; };
 		537606CC2391D2A100EEDC2F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 537606CB2391D2A100EEDC2F /* AppDelegate.m */; };
 		537606CF2391D2A100EEDC2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 537606CD2391D2A100EEDC2F /* Main.storyboard */; };
@@ -50,6 +51,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		536868DE2439CE520036DE43 /* Credits.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
 		537606C52391D2A100EEDC2F /* ReverseImageSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReverseImageSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		537606C82391D2A100EEDC2F /* ReverseImageSearch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ReverseImageSearch.entitlements; sourceTree = "<group>"; };
 		537606CA2391D2A100EEDC2F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 				537606D32391D2A300EEDC2F /* Assets.xcassets */,
 				537606D52391D2A300EEDC2F /* Info.plist */,
 				537606D62391D2A300EEDC2F /* main.m */,
+				536868DE2439CE520036DE43 /* Credits.rtf */,
 			);
 			path = ReverseImageSearch;
 			sourceTree = "<group>";
@@ -244,6 +247,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				537607042391D3D500EEDC2F /* search_engines.plist in Resources */,
+				536868DF2439CE520036DE43 /* Credits.rtf in Resources */,
 				537606C92391D2A100EEDC2F /* ReverseImageSearch.entitlements in Resources */,
 				5376070723920BAE00EEDC2F /* README.md in Resources */,
 				537606D42391D2A300EEDC2F /* Assets.xcassets in Resources */,
@@ -471,7 +475,7 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = XLREUF5H62;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = ReverseImageSearch/Info.plist;
@@ -479,6 +483,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MARKETING_VERSION = 1.11;
 				PRODUCT_BUNDLE_IDENTIFIER = com.yimingliu.ReverseImageSearch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -492,7 +497,7 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = XLREUF5H62;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = ReverseImageSearch/Info.plist;
@@ -500,6 +505,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MARKETING_VERSION = 1.11;
 				PRODUCT_BUNDLE_IDENTIFIER = com.yimingliu.ReverseImageSearch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
