@@ -41,12 +41,12 @@
       "size" : "256x256"
     },
     {
+      "filename" : "reverse-image-search.png",
       "idiom" : "mac",
       "scale" : "1x",
       "size" : "512x512"
     },
     {
-      "filename" : "reverse-glass-1024.png",
       "idiom" : "mac",
       "scale" : "2x",
       "size" : "512x512"
