@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		536868DF2439CE520036DE43 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 536868DE2439CE520036DE43 /* Credits.rtf */; };
-		537606C92391D2A100EEDC2F /* ReverseImageSearch.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 537606C82391D2A100EEDC2F /* ReverseImageSearch.entitlements */; };
 		537606CC2391D2A100EEDC2F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 537606CB2391D2A100EEDC2F /* AppDelegate.m */; };
 		537606CF2391D2A100EEDC2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 537606CD2391D2A100EEDC2F /* Main.storyboard */; };
 		537606D22391D2A100EEDC2F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 537606D12391D2A100EEDC2F /* ViewController.m */; };
@@ -248,7 +247,6 @@
 			files = (
 				537607042391D3D500EEDC2F /* search_engines.plist in Resources */,
 				536868DF2439CE520036DE43 /* Credits.rtf in Resources */,
-				537606C92391D2A100EEDC2F /* ReverseImageSearch.entitlements in Resources */,
 				5376070723920BAE00EEDC2F /* README.md in Resources */,
 				537606D42391D2A300EEDC2F /* Assets.xcassets in Resources */,
 				537606CF2391D2A100EEDC2F /* Main.storyboard in Resources */,
@@ -433,6 +431,7 @@
 				CODE_SIGN_ENTITLEMENTS = "ReverseImageSearch Extension/ReverseImageSearch_Extension.entitlements";
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = XLREUF5H62;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "ReverseImageSearch Extension/Info.plist";
@@ -441,6 +440,7 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.yimingliu.ReverseImageSearchExt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -453,6 +453,7 @@
 				CODE_SIGN_ENTITLEMENTS = "ReverseImageSearch Extension/ReverseImageSearch_Extension.entitlements";
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = XLREUF5H62;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "ReverseImageSearch Extension/Info.plist";
@@ -461,6 +462,7 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.yimingliu.ReverseImageSearchExt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -475,7 +477,7 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = XLREUF5H62;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = ReverseImageSearch/Info.plist;
@@ -483,7 +485,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.11;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.yimingliu.ReverseImageSearch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -497,7 +499,7 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = XLREUF5H62;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = ReverseImageSearch/Info.plist;
@@ -505,7 +507,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.11;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.yimingliu.ReverseImageSearch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
