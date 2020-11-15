@@ -78,6 +78,12 @@
 				<key>Text</key>
 				<string>Search Image with Yandex</string>
 			</dict>
+			<dict>
+				<key>Command</key>
+				<string>ascii2d</string>
+				<key>Text</key>
+				<string>Search Image with ascii2d</string>
+			</dict>
 		</array>
 		<key>SFSafariWebsiteAccess</key>
 		<dict>

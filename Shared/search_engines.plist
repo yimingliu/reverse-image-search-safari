@@ -12,5 +12,7 @@
 	<string>https://tineye.com/search/?url=%@</string>
 	<key>ukiyo-e</key>
 	<string>https://ukiyo-e.org/upload/?url=%@</string>
+	<key>ascii2d</key>
+	<string>https://ascii2d.net/search/url/%@</string>
 </dict>
 </plist>
