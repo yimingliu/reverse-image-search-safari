@@ -71,7 +71,10 @@
         search_uri = [NSString stringWithFormat:search_uri, image_uri];
         [page getContainingTabWithCompletionHandler:^(SFSafariTab * _Nonnull tab) {
             [tab getContainingWindowWithCompletionHandler:^(SFSafariWindow * _Nullable window) {
-                [window openTabWithURL:[NSURL URLWithString:search_uri] makeActiveIfPossible:YES completionHandler:^(SFSafariTab * _Nullable tab) {
+                NSUserDefaults *defaults = [self userDefaults:[self createAppDefaults]];
+                BOOL result_in_background = [defaults boolForKey:@"prefResultInBackground"];
+                NSLog(@"result in background:  %d", result_in_background);
+                [window openTabWithURL:[NSURL URLWithString:search_uri] makeActiveIfPossible:!result_in_background completionHandler:^(SFSafariTab * _Nullable tab) {
                     // do nothing
                 }];
             }];
@@ -115,6 +118,7 @@
     {
         [appDefaults setValue:@YES forKey:key];
     }
+    [appDefaults setValue:@NO forKey:@"prefResultInBackground"];
     return appDefaults;
 }
 

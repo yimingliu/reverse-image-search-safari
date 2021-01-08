@@ -22,13 +22,17 @@
     keys = [keys sortedArrayUsingSelector:@selector(compare:)];
     for (NSString* key in keys)
     {
-        NSButton* checkbox = [NSButton checkboxWithTitle:key target:nil action:nil];
-        [checkbox bind:@"value"
-                           toObject:defaultsController
-                   withKeyPath:[NSString stringWithFormat:@"values.%@", key]
-                   options:[NSDictionary dictionaryWithObject:[NSNumber numberWithBool:YES] forKey:@"NSContinuouslyUpdatesValue"]];
-        [self.stackView addArrangedSubview:checkbox];
+        if (![key hasPrefix:@"pref"])
+        {
+            NSButton* checkbox = [NSButton checkboxWithTitle:key target:nil action:nil];
+            [checkbox bind:@"value"
+                               toObject:defaultsController
+                       withKeyPath:[NSString stringWithFormat:@"values.%@", key]
+                       options:[NSDictionary dictionaryWithObject:[NSNumber numberWithBool:YES] forKey:@"NSContinuouslyUpdatesValue"]];
+            [self.stackView addArrangedSubview:checkbox];
+        }
     }
+    [self.prefOpenBackground bind:@"value" toObject:defaultsController withKeyPath:@"values.prefResultInBackground" options:[NSDictionary dictionaryWithObject:[NSNumber numberWithBool:YES] forKey:@"NSContinuouslyUpdatesValue"]];
 }
 
 - (IBAction)openSafariExtensionPreferences:(id)sender {
@@ -54,6 +58,7 @@
     {
         [appDefaults setValue:@YES forKey:key];
     }
+    [appDefaults setValue:@NO forKey:@"prefResultInBackground"];
     return appDefaults;
 }
 

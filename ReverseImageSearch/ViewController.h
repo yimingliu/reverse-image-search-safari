@@ -12,6 +12,7 @@
 
 @property (weak, nonatomic) IBOutlet NSTextField * appNameLabel;
 @property (weak, nonatomic) IBOutlet NSStackView * stackView;
+@property (weak, nonatomic) IBOutlet NSButton * prefOpenBackground;
 
 - (IBAction)openSafariExtensionPreferences:(id)sender;
 
