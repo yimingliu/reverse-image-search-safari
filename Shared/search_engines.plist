@@ -14,5 +14,7 @@
 	<string>https://ukiyo-e.org/upload/?url=%@</string>
 	<key>ascii2d</key>
 	<string>https://ascii2d.net/search/url/%@</string>
+	<key>karmadecay</key>
+	<string>http://karmadecay.com/search?kdtoolver=b1&amp;q=%@</string>
 </dict>
 </plist>

@@ -73,6 +73,12 @@
 				<key>Text</key>
 				<string>Search Image with ascii2d</string>
 			</dict>
+			<dict>
+				<key>Command</key>
+				<string>karmadecay</string>
+				<key>Text</key>
+				<string>Search image with KarmaDecay</string>
+			</dict>
 		</array>
 		<key>SFSafariToolbarItem</key>
 		<dict>
@@ -92,7 +98,7 @@
 		</dict>
 	</dict>
 	<key>NSHumanReadableCopyright</key>
-	<string>Copyright © 2018-2020 Yiming Liu. All rights reserved.</string>
+	<string>Copyright © 2018-2021 Yiming Liu. All rights reserved.</string>
 	<key>NSHumanReadableDescription</key>
 	<string>Adds contextual menus for reverse image search</string>
 </dict>
