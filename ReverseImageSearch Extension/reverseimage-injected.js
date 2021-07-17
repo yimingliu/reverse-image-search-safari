@@ -37,7 +37,7 @@ function extractImageMetadata(node)
     }
     else if (event.target.nodeName == "IMG")
     {
-        uri = new URL(event.target.src, event.target.ownerDocument.baseURI);
+        uri = new URL(event.target.currentSrc, event.target.ownerDocument.baseURI);
         is_img = true;
     }
     if (uri && is_img)
