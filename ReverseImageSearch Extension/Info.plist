@@ -79,6 +79,12 @@
 				<key>Text</key>
 				<string>Search image with KarmaDecay</string>
 			</dict>
+			<dict>
+				<key>Command</key>
+				<string>iqdb</string>
+				<key>Text</key>
+				<string>Search Image with iqdb</string>
+			</dict>
 		</array>
 		<key>SFSafariToolbarItem</key>
 		<dict>

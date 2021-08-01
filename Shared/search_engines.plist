@@ -16,5 +16,7 @@
 	<string>https://ascii2d.net/search/url/%@</string>
 	<key>karmadecay</key>
 	<string>http://karmadecay.com/search?kdtoolver=b1&amp;q=%@</string>
+	<key>iqdb</key>
+	<string>https://iqdb.org/?url=%@</string>
 </dict>
 </plist>
