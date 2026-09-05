@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="24127" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="18122"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="24127"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -100,16 +100,16 @@
             <objects>
                 <viewController id="XfG-lQ-9wD" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="215"/>
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="219"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <stackView distribution="fill" orientation="vertical" alignment="centerX" spacing="42" horizontalStackHuggingPriority="250" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZLV-xE-AGT">
-                                <rect key="frame" x="0.0" y="34" width="480" height="136"/>
+                                <rect key="frame" x="0.0" y="34" width="480" height="140"/>
                                 <subviews>
                                     <stackView distribution="fill" orientation="vertical" alignment="leading" spacing="16" horizontalStackHuggingPriority="250" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4EA-PF-oZY">
-                                        <rect key="frame" x="109" y="120" width="262" height="16"/>
+                                        <rect key="frame" x="107" y="124" width="266" height="16"/>
                                         <subviews>
-                                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="zCB-IN-6Vh">
+                                            <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="zCB-IN-6Vh">
                                                 <rect key="frame" x="-2" y="0.0" width="188" height="16"/>
                                                 <textFieldCell key="cell" lineBreakMode="clipping" title="Enable/disable search engines" id="zZb-jO-jG1">
                                                     <font key="font" usesAppearanceFont="YES"/>
@@ -126,14 +126,14 @@
                                         </customSpacing>
                                     </stackView>
                                     <button horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="FXT-4U-1X6">
-                                        <rect key="frame" x="106" y="61" width="267" height="18"/>
+                                        <rect key="frame" x="109" y="66" width="263" height="16"/>
                                         <buttonCell key="cell" type="check" title="Open search results in background tabs" bezelStyle="regularSquare" imagePosition="left" inset="2" id="ZXs-jQ-1hD">
                                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                             <font key="font" metaFont="system"/>
                                         </buttonCell>
                                     </button>
                                     <button horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="ooh-eV-eLQ">
-                                        <rect key="frame" x="102" y="-7" width="276" height="32"/>
+                                        <rect key="frame" x="107" y="0.0" width="266" height="24"/>
                                         <buttonCell key="cell" type="push" title="Open in Safari Extensions Preferences…" alternateTitle="Install" bezelStyle="rounded" alignment="center" lineBreakMode="truncatingMiddle" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Srx-0j-A4D">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="system"/>
@@ -175,15 +175,15 @@ DQ
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
                 <stackView distribution="fill" orientation="vertical" alignment="centerX" spacing="42" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" id="bmM-y6-buT">
-                    <rect key="frame" x="0.0" y="0.0" width="480" height="250"/>
+                    <rect key="frame" x="0.0" y="-2" width="480" height="252"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <subviews>
                         <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aRp-Cm-lcl" userLabel="IconView">
-                            <rect key="frame" x="176" y="120" width="128" height="130"/>
+                            <rect key="frame" x="176" y="124" width="128" height="128"/>
                             <imageCell key="cell" refusesFirstResponder="YES" alignment="left" image="IBLostImage" id="Zs2-ck-AU1"/>
                         </imageView>
-                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Ggx-fH-p1M">
-                            <rect key="frame" x="206" y="62" width="68" height="16"/>
+                        <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Ggx-fH-p1M">
+                            <rect key="frame" x="206" y="66" width="68" height="16"/>
                             <textFieldCell key="cell" lineBreakMode="clipping" title="App Name" id="9P9-ha-wgd">
                                 <font key="font" metaFont="system"/>
                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -191,7 +191,7 @@ DQ
                             </textFieldCell>
                         </textField>
                         <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="TaQ-U1-tk0">
-                            <rect key="frame" x="102" y="-7" width="276" height="32"/>
+                            <rect key="frame" x="107" y="0.0" width="266" height="24"/>
                             <buttonCell key="cell" type="push" title="Open in Safari Extensions Preferences…" alternateTitle="Install" bezelStyle="rounded" alignment="center" lineBreakMode="truncatingMiddle" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="3Rg-SE-Dso">
                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                 <font key="font" metaFont="system"/>

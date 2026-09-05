@@ -18,5 +18,7 @@
 	<string>http://karmadecay.com/search?kdtoolver=b1&amp;q=%@</string>
 	<key>iqdb</key>
 	<string>https://iqdb.org/?url=%@</string>
+	<key>saucenao</key>
+	<string>https://saucenao.com/search.php?db=999&amp;url=%@</string>
 </dict>
 </plist>

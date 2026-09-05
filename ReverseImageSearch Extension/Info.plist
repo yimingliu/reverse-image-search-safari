@@ -85,6 +85,12 @@
 				<key>Text</key>
 				<string>Search Image with iqdb</string>
 			</dict>
+			<dict>
+				<key>Command</key>
+				<string>saucenao</string>
+				<key>Text</key>
+				<string>Search Image with SauceNAO</string>
+			</dict>
 		</array>
 		<key>SFSafariToolbarItem</key>
 		<dict>
